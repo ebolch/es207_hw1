@@ -232,15 +232,30 @@ Z:/Erik/ES207/HW1/
 
 <span style="color:crimson">18. Make a repo on GitHub called “ES207_hw1. Write the render-read R script in 20.2 and commit it to your repo.</span>
 
+<span style="color:blue">
+https://github.com/ebolch/es207_hw1/blob/master/render-ready.R
+<span/>
 
 <span style="color:crimson">19. Following the instructions in 23, clone a GitHub repository that interests you. Find one simple script in the repo and run the code locally and understand what it is doing. Once you understand what it is doing, describe it in your Word doc and commit it to your hw1 repo. Make sure to cite the source of your script, and document any changes you made. DO NOT fork this code (we will do that next time).</span>
 
+<span style="color:blue">
+https://github.com/ebolch/es207_hw1/blob/master/19_clone_a_repo.R
+
+This script uses multiple datasets to calculate gun deaths per 100,000 people by cause and demographics.
+
+<span/>
+
 <span style="color:crimson">20. Following the instructions in 25, fork the ‘bingo’ repo. Clone it to your local machine and create a new bingo card. Commit and push your changes back to your copy of the repo on GitHub. Make a pull request back to the main ‘bingo’ repo. Turn in your new bingo card.</span>
+
+<span style="color:blue">
+https://github.com/ebolch/es207_hw1/blob/master/bingo_card.R
+<span/>
 
 <span style="color:crimson">21. Provide your GitHub account name here.</span>
 
-
-
+<span style="color:blue">
+https://github.com/ebolch
+<span/>
 
 
 
