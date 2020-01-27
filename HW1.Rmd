@@ -1,0 +1,252 @@
+---
+title: "ES207 HW1"
+author: "Erik Bolch"
+output:
+  html_document:
+    df_print: paged
+---
+
+<span style="color:crimson">
+3. What happens if your try to print out the 4th element of x? Print your result and provide the answer in your lab write up.
+</span>
+```{r}
+x<-c(1,2,4)
+x
+print(x)
+x[3]
+x[2:3]
+x[4]
+print(x[4])
+```
+<span style="color:blue">
+There is nothing indexed at position 4, so NA is returned.
+</span>
+
+<span style="color:crimson">
+4. Try creating a variable “s” that is the standard deviation of q. Make sure you print it out to confirm it worked.
+</span>
+```{r}
+q <- c(x,x,8)
+# Mean of the x vector
+mean(x)
+# Standard deviation of the x vector
+sd(x) 
+y <- mean(x)
+# And then print it by:
+y
+stdev<-sd(q)
+stdev
+
+```
+
+<span style="color:crimson">
+5. Can you make R write your name? Print the Results to confirm that it worked.
+</span>
+
+```{r}
+paste("Erik","Bolch")
+```
+```{r}
+#Assign R objects
+a <- 1+1
+b <- 24/12
+c <- 100^2
+#Perform some math on the objects
+d=(a+c)/b
+#Print the results
+d
+```
+
+```{r}
+# print out y
+print(y)
+y
+
+```
+
+```{r}
+# assign value 100 to object "m"
+m <- 100
+# list objects in my current environment
+ls()
+```
+```{r}
+rm(m)
+```
+<span style="color:crimson">
+6. What objects are left in your R session after removing m?
+</span>
+```{r}
+ls()
+```
+```{r}
+rm(list=ls())
+ls()
+```
+```{r}
+Nile
+plot(Nile)
+
+meanNile <- mean(Nile)
+meanNile
+
+sdNile <- sd(Nile)
+sdNile
+
+hist(Nile)
+```
+
+```{r}
+oddcount <- function(x) 
+{
+    k <- 0 # assign 0 to k
+    for (n in x) {
+        if(n %% 2 == 1)
+        {
+            k <- k+1 # %% is the modulo operator
+        }
+    }
+  return(k)
+}
+oddcount
+
+oddcount(x <- c(1,3,5))
+
+oddcount(x <- c(1,2,3,7,9))
+```
+<span style="color:crimson">
+7. How many odd numbers were in this vector?.
+</span>
+<span style="color:blue">
+4</span>
+
+```{r}
+38 %% 7
+38 %% 2
+39 %% 2
+y <- c(3,0,7)
+for(n in y) { print(n) } # Print simply prints the value of the variable
+
+n <- y[1]
+print(n)
+
+n <- y[2]
+print(n)
+
+n <- y[3]
+print(n)
+
+37 %% 2
+37 %% 2 == 1  
+38 %% 2
+38 %% 2 == 1
+```
+```{r} 
+oddcount <- function(x) {
+#   print("x is:")
+    print(x)
+    k <- 0 # assign 0 to k
+    print(paste("k is initialized as",k))
+    for (n in x) {
+        print(paste("current x value being tested is",n))
+        if(n %% 2 == 1) 
+        {
+            k <- k+1 # %% is the modulo operator
+            print(paste(n,"is an odd number!"))
+        } else
+        {
+            print(paste(n,"is an even number!"))
+        }
+        print(paste("k is currently",k))
+    }
+    print(paste("The final k is",k))
+    return(k)
+}
+# And trying running our more verbose function:
+oddcount(x <- c(1,2,3,7,9))
+```
+<span style="color:crimson"> 8. Try creating a new function “evencount” that counts the even numbers in a vector. Turn in your script as a .R script. Make sure you add appropriate comments - you will be graded on this.
+</span>
+```{r}
+evencount <- function(x) 
+{
+    k <- 0 # assign 0 to k
+    for (n in x) {
+        if(n %% 2 == 0)
+        {
+            k <- k+1 # %% is the modulo operator
+        }
+    }
+  return(k)
+}
+evencount(c(2,4,6,7,8,9,24))
+```
+<span style="color:crimson">9. What are the three main reasons you want to have a good project layout? Can you think of any others?</span>
+
+<span style="color:blue">
+The three main reasons to keep a good project layout are: able maintain data integrity, project portability, and it makes it easy to pick up after a break. Good project layout also allows people to collaborate more easily.
+</span>
+
+<span style="color:crimson">10. What are the three primary principles to follow in a good project layout?</span>
+
+<span style="color:blue">
+Three primary principles to follow in good project layout are:
+-Treat data as read only
+-Treat generated output as disposible
+-Separate function definition and application
+</span>
+
+<span style="color:crimson">11. Write out the full path for your R installation. Use the format of the operating system you are currently using.</span>
+
+<span style="color:blue">
+"C:\Program Files\R\R-3.6.2\"
+</span>
+
+<span style="color:crimson">12. Write the path above using a different operating system.
+
+<span style="color:blue">
+Linux file structure:
+/Program Files/R/R-3.6.2/
+</span>
+
+<span style="color:crimson">13. Write out the full path for the directory structure you have set up for this class all the way to where you have saved this .html tutorial.</span>
+
+<span style="color:blue">
+Z:/Erik/ES207/HW1/
+</span>
+
+<span style="color:crimson">14. Write out the relative path for this .html file assuming your working directory to be set to your equivalent of Users/CardiB/classes/.</span>
+
+<span style="color:blue">/ES207/HW1/</span>
+
+<span style="color:crimson">15. Write out the paths in an operating system other than your own.</span>
+
+<span style="color:blue">/beanstore/Erik/ES207/HW1/</span>
+
+
+<span style="color:crimson">16. Complete Steps 1-28 in the “Happy Git with R” tutorial.</span>
+
+
+<span style="color:crimson">17. In step 9 install SourceTree. Note: If you’re using Google Chrome with a google account, and also use a google account for registering with Atlassian it makes life easy. You will not need to worry about setting up HTTPS or SSH authorization to make push and pull requests.</span>
+
+
+<span style="color:crimson">18. Make a repo on GitHub called “ES207_hw1. Write the render-read R script in 20.2 and commit it to your repo.</span>
+
+
+<span style="color:crimson">19. Following the instructions in 23, clone a GitHub repository that interests you. Find one simple script in the repo and run the code locally and understand what it is doing. Once you understand what it is doing, describe it in your Word doc and commit it to your hw1 repo. Make sure to cite the source of your script, and document any changes you made. DO NOT fork this code (we will do that next time).</span>
+
+<span style="color:crimson">20. Following the instructions in 25, fork the ‘bingo’ repo. Clone it to your local machine and create a new bingo card. Commit and push your changes back to your copy of the repo on GitHub. Make a pull request back to the main ‘bingo’ repo. Turn in your new bingo card.</span>
+
+<span style="color:crimson">21. Provide your GitHub account name here.</span>
+
+
+
+
+
+
+
+
+
+
+
+
