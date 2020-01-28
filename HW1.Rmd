@@ -4,6 +4,7 @@ author: "Erik Bolch"
 output:
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 
 <span style="color:crimson">
@@ -199,14 +200,14 @@ Three primary principles to follow in good project layout are:
 <span style="color:crimson">11. Write out the full path for your R installation. Use the format of the operating system you are currently using.</span>
 
 <span style="color:blue">
-"C:\Program Files\R\R-3.6.2\"
+"C:\\Program Files\\R\\R-3.6.2\\"
 </span>
 
 <span style="color:crimson">12. Write the path above using a different operating system.
 
 <span style="color:blue">
 Linux file structure:
-/Program Files/R/R-3.6.2/
+"/Program Files/R/R-3.6.2/"
 </span>
 
 <span style="color:crimson">13. Write out the full path for the directory structure you have set up for this class all the way to where you have saved this .html tutorial.</span>
